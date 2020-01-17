@@ -10,7 +10,7 @@ parser.add_argument( "--wasm", action="store_true", help="Create a .wasm file (W
 clArguments = parser.parse_args()
 
 # Startup
-exec(open(os.path.expanduser('~/.emscripten'), 'r').read())
+exec(open(os.path.expanduser('/emsdk_portable/.emscripten'), 'r').read())
 
 EMSCRIPTEN_ROOT = os.getenv('EMSCRIPTEN')
 # try:
